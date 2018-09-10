@@ -1,0 +1,16 @@
+{
+  "name": "csv-to-jsonld",
+  "version": "1.0.0",
+  "description": "converts CSV to JSON-LD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ali Khalili",
+  "license": "ISC",
+  "dependencies": {
+    "camelcase": "^5.0.0",
+    "csv-streamify": "^4.0.0",
+    "valid-url": "^1.0.9"
+  }
+}
