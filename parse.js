@@ -2,12 +2,12 @@ const csv = require('csv-streamify')
 const fs = require('fs')
 const camelCase = require('camelcase');
 var validUrl = require('valid-url');
+var prefixes = require('./data/prefixes');
 
 let contextObj = {
-    "r": "http://example.org/res/",
-    "v": "http://example.org/vocab/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "foaf": "http://xmlns.com/foaf/0.1/"
+    "r": "http://rdf.ld-r.org/res/",
+    "v": "http://rdf.ld-r.org/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
 }
 let contextOptions ={
   'idColumn': 'ID',
@@ -15,6 +15,16 @@ let contextOptions ={
   'skippedColumns': ['v'],
   'customMappings': {
     'WebURL': 'foaf:page'
+  }
+}
+
+//automatically add other prefixes from the list
+if(contextOptions.customMappings){
+  for(let item in contextOptions.customMappings){
+    let tmp = contextOptions.customMappings[item].split(':');
+    if(prefixes.list[tmp[0]]){
+      contextObj[tmp[0]] = prefixes.list[tmp[0]];
+    }
   }
 }
 
