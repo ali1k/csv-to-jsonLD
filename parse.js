@@ -1,9 +1,6 @@
-const csv = require('csv-streamify')
-const fs = require('fs')
-const camelCase = require('camelcase');
-var validUrl = require('valid-url');
-var prefixes = require('./data/prefixes');
-
+//specify the path to your input CSV
+let csvPath = 'csv/example.csv';
+//---------configurations--------
 let contextObj = {
     "r": "http://rdf.ld-r.org/res/",
     "v": "http://rdf.ld-r.org/vocab/",
@@ -17,6 +14,12 @@ let contextOptions ={
     'WebURL': 'foaf:page'
   }
 }
+//-----------------------------
+const csv = require('csv-streamify')
+const fs = require('fs')
+const camelCase = require('camelcase');
+var validUrl = require('valid-url');
+var prefixes = require('./data/prefixes');
 
 //automatically add other prefixes from the list
 if(contextOptions.customMappings){
@@ -92,4 +95,4 @@ const parser = csv(options, function (err, result) {
 })
 
 // now pipe some data into it
-fs.createReadStream('csv/example.csv').pipe(parser)
+fs.createReadStream(csvPath).pipe(parser)
