@@ -6,12 +6,16 @@ var validUrl = require('valid-url');
 let contextObj = {
     "r": "http://example.org/res/",
     "v": "http://example.org/vocab/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "foaf": "http://xmlns.com/foaf/0.1/"
 }
 let contextOptions ={
   'idColumn': 'ID',
-  'typeColumn': 'Paper',
-  'skippedColumns': ['v']
+  'entityType': 'Paper',
+  'skippedColumns': ['v'],
+  'customMappings': {
+    'WebURL': 'foaf:page'
+  }
 }
 
 let graphArr = [];
@@ -35,10 +39,16 @@ const parser = csv(options, function (err, result) {
   //check the first result for context
   if(result.length){
     for(let prop in result[0]){
-      if (validUrl.isUri(result[0][prop])){
-        contextObj['v:'+camelCase(prop)] = {
-          "@type": "@id"
-        };
+      if (validUrl.isUri(result[0][prop]) && contextOptions['skippedColumns'].indexOf(prop) == -1){
+        if(contextOptions['customMappings'] && contextOptions['customMappings'][prop]){
+          contextObj[contextOptions['customMappings'][prop]] = {
+            "@type": "@id"
+          };
+        }else{
+          contextObj['v:'+camelCase(prop)] = {
+            "@type": "@id"
+          };
+        }
 
       }
     }
@@ -46,14 +56,18 @@ const parser = csv(options, function (err, result) {
   result.forEach(function (line) {
     //console.log(line);
     let tmpObj = {};
-    tmpObj['@type'] = 'v:'+contextOptions['typeColumn'];
+    tmpObj['@type'] = 'v:'+contextOptions['entityType'];
     for(let prop in line){
       //console.log(line[prop]);
       if(prop == contextOptions['idColumn']){
         tmpObj['@id'] = 'r:'+camelCase(line[prop]);
       }else{
         if(contextOptions['skippedColumns'].indexOf(prop) == -1){
-          tmpObj['v:'+camelCase(prop)] = isNaN(line[prop]) ? line[prop] : Number(line[prop]) ;
+          if(contextOptions['customMappings'] && contextOptions['customMappings'][prop]){
+            tmpObj[contextOptions['customMappings'][prop]] = isNaN(line[prop]) ? line[prop] : Number(line[prop]) ;
+          }else{
+            tmpObj['v:'+camelCase(prop)] = isNaN(line[prop]) ? line[prop] : Number(line[prop]) ;
+          }
         }
       }
     }
