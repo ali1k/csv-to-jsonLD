@@ -1,0 +1,747 @@
+{
+  "@context": {
+    "r": "http://rdf.ld-r.org/res/",
+    "v": "http://rdf.ld-r.org/vocab/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "foaf:page": {
+      "@type": "@id"
+    }
+  },
+  "@graph": [{
+    "@type": "v:Paper",
+    "v:title": "Improving simulations-based industrial optimization with Semantic Web technologies",
+    "@id": "r:113",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/improving-simulations-based-industrial-optimization-semantic-web-technologies",
+    "v:author": "Fajar J. Ekaputra"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Anna Fensel"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Get Your Hands Dirty: Evaluating Word2Vec Models for Patent Data",
+    "@id": "r:123",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/get-your-hands-dirty-evaluating-word2vec-models-patent-data",
+    "v:author": "Harald Sack"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "“The Less Is More” for Text Classification",
+    "@id": "r:122",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/“-less-more”-text-classification",
+    "v:author": "Harald Sack"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Annotation and Automated Extraction of Audio-Visual Staging Patterns in Large-Scale Empirical Film Studies",
+    "@id": "r:109",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/semantic-annotation-and-automated-analysis-audio-visual-patterns-large-scale-empirical-film-studies",
+    "v:author": "Harald Sack"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Exploiting ontologies for deep learning: a case for sentiment mining",
+    "@id": "r:112",
+    "v:industryRelevant": "no",
+    "foaf:page": "missing",
+    "v:author": "Christopher Brewster"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SlideWiki -- A Platform for Authoring FAIR Educational Content",
+    "@id": "r:108",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/slidewiki-platform-authoring-fair-educational-content",
+    "v:author": "Ali Khalili"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SlideWiki -- A Platform for Authoring FAIR Educational Content",
+    "@id": "r:108",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/slidewiki-platform-authoring-fair-educational-content",
+    "v:author": "Klaas Andries de Graaf"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Profiting from Kitties on Ethereum: Leveraging Blockchain RDF with SANSA",
+    "@id": "r:124",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/profiting-kitties-ethereum-leveraging-blockchain-rdf-sansa",
+    "v:author": "Gezim Sejdiu"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Profiting from Kitties on Ethereum: Leveraging Blockchain RDF with SANSA",
+    "@id": "r:124",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/profiting-kitties-ethereum-leveraging-blockchain-rdf-sansa",
+    "v:author": "Hajira Jabeen"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontologies in Support of Data Mining",
+    "@id": "r:98",
+    "v:industryRelevant": "no",
+    "foaf:page": "missing",
+    "v:author": "Ondřej Zamazal"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Sabrina Kirrane"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Tassilo Pellegrini"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "“The Less Is More” for Text Classification",
+    "@id": "r:122",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/“-less-more”-text-classification",
+    "v:author": "Lei Zhang"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SPIRIT: A Semantic Transparency and Compliance Stack",
+    "@id": "r:119",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/spirit-semantic-transparency-and-compliance-stack",
+    "v:author": "Jens Lehmann"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SPIRIT: A Semantic Transparency and Compliance Stack",
+    "@id": "r:119",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/spirit-semantic-transparency-and-compliance-stack",
+    "v:author": "Patrick Westphal"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SPIRIT: A Semantic Transparency and Compliance Stack",
+    "@id": "r:119",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/spirit-semantic-transparency-and-compliance-stack",
+    "v:author": "Sabrina Kirrane"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Interlinking Legal Data",
+    "@id": "r:118",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/interlinking-legal-data",
+    "v:author": "Sabrina Kirrane"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Assessing the Quality of Geospatial Linked Data – Experiences from Ordnance Survey Ireland (OSi)",
+    "@id": "r:94",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/assessing-quality-geospatial-linked-data-–-experiences-ordnance-survey-ireland-osi",
+    "v:author": "Jeremy Debattista"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Profiting from Kitties on Ethereum: Leveraging Blockchain RDF with SANSA",
+    "@id": "r:124",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/profiting-kitties-ethereum-leveraging-blockchain-rdf-sansa",
+    "v:author": "Jens Lehmann"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Giray Havur"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Simon Steyskal"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Oleksandra Panasiuk"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Victor Mireles"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "FarsBase: a Cross-Domain Farsi knowledge Graph",
+    "@id": "r:115",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/farsbase-cross-domain-farsi-knowledge-graph-0",
+    "v:author": "test"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Assistive Query Building for Semantic Data",
+    "@id": "r:107",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/assistive-query-building-semantic-data",
+    "v:author": "Vangelis Kritsotakis"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Assistive Query Building for Semantic Data",
+    "@id": "r:107",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/assistive-query-building-semantic-data",
+    "v:author": "Yannis Roussakis"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Assistive Query Building for Semantic Data",
+    "@id": "r:107",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/assistive-query-building-semantic-data",
+    "v:author": "Theodore Patkos"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Assistive Query Building for Semantic Data",
+    "@id": "r:107",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/assistive-query-building-semantic-data",
+    "v:author": "Maria Theodoridou"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Thomas Thurner"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "DALICC: A Framework for Publishing and Consuming Data Assets Legally",
+    "@id": "r:114",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/dalicc-framework-publishing-and-consuming-data-assets-legally",
+    "v:author": "Axel Polleres"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Integrating heterogeneous data sources using rule-based reasoning, backward-chaining and custom built-ins",
+    "@id": "r:116",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/integrating-heterogeneous-data-sources-using-rule-based-reasoning-backward-chaining-and-custom-built",
+    "v:author": "Jack Verhoosel"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Integrating heterogeneous data sources using rule-based reasoning, backward-chaining and custom built-ins",
+    "@id": "r:116",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/integrating-heterogeneous-data-sources-using-rule-based-reasoning-backward-chaining-and-custom-built",
+    "v:author": "Barry Nouwt"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontology-based Design of Experiments on Big Data Solutions",
+    "@id": "r:117",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/ontology-based-design-experiments-big-data-solutions",
+    "v:author": "Maximilian Zocholl"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontology-based Design of Experiments on Big Data Solutions",
+    "@id": "r:117",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/ontology-based-design-experiments-big-data-solutions",
+    "v:author": "Elena Camossi"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontology-based Design of Experiments on Big Data Solutions",
+    "@id": "r:117",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/ontology-based-design-experiments-big-data-solutions",
+    "v:author": "Anne-Laure Jousselme"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Interlinking Legal Data",
+    "@id": "r:118",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/interlinking-legal-data",
+    "v:author": "Axel Polleres"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "A Semantic Catalogue for the Data Market Austria",
+    "@id": "r:126",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-catalogue-data-market-austria",
+    "v:author": "Victor Mireles"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontology-based Design of Experiments on Big Data Solutions",
+    "@id": "r:117",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/ontology-based-design-experiments-big-data-solutions",
+    "v:author": "Cyril Ray"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Hailing a Taxi on the Web of Needs",
+    "@id": "r:103",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/hailing-taxi-web-needs",
+    "v:author": "Maximilian Stolze"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Hailing a Taxi on the Web of Needs",
+    "@id": "r:103",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/hailing-taxi-web-needs",
+    "v:author": "Florian Kleedorfer"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Hailing a Taxi on the Web of Needs",
+    "@id": "r:103",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/hailing-taxi-web-needs",
+    "v:author": "Fabian Suda"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Interlinking Legal Data",
+    "@id": "r:118",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/interlinking-legal-data",
+    "v:author": "Erwin Filtz"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "A Semantic Catalogue for the Data Market Austria",
+    "@id": "r:126",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-catalogue-data-market-austria",
+    "v:author": "Bernd-Peter Ivanschitz"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "A Semantic Catalogue for the Data Market Austria",
+    "@id": "r:126",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-catalogue-data-market-austria",
+    "v:author": "Thomas J. Lampoltshammer"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "A Semantic Catalogue for the Data Market Austria",
+    "@id": "r:126",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-catalogue-data-market-austria",
+    "v:author": "Artem Revenko"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "A Semantic Catalogue for the Data Market Austria",
+    "@id": "r:126",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-catalogue-data-market-austria",
+    "v:author": "Sven Schlarb"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "A Semantic Catalogue for the Data Market Austria",
+    "@id": "r:126",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-catalogue-data-market-austria",
+    "v:author": "Lőrinc Thurnay"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Improving simulations-based industrial optimization with Semantic Web technologies",
+    "@id": "r:113",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/improving-simulations-based-industrial-optimization-semantic-web-technologies",
+    "v:author": "Benjamin Mörzinger"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Get Your Hands Dirty: Evaluating Word2Vec Models for Patent Data",
+    "@id": "r:123",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/get-your-hands-dirty-evaluating-word2vec-models-patent-data",
+    "v:author": "Hidir Aras"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Get Your Hands Dirty: Evaluating Word2Vec Models for Patent Data",
+    "@id": "r:123",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/get-your-hands-dirty-evaluating-word2vec-models-patent-data",
+    "v:author": "Rima Türker"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Get Your Hands Dirty: Evaluating Word2Vec Models for Patent Data",
+    "@id": "r:123",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/get-your-hands-dirty-evaluating-word2vec-models-patent-data",
+    "v:author": "Dieter Geiss"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Get Your Hands Dirty: Evaluating Word2Vec Models for Patent Data",
+    "@id": "r:123",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/get-your-hands-dirty-evaluating-word2vec-models-patent-data",
+    "v:author": "Max Milbradt"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "“The Less Is More” for Text Classification",
+    "@id": "r:122",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/“-less-more”-text-classification",
+    "v:author": "Rima Türker"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SPIRIT: A Semantic Transparency and Compliance Stack",
+    "@id": "r:119",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/spirit-semantic-transparency-and-compliance-stack",
+    "v:author": "Javier Fernández"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Hailing a Taxi on the Web of Needs",
+    "@id": "r:103",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/hailing-taxi-web-needs",
+    "v:author": "Christian Huemer"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Annotation and Automated Extraction of Audio-Visual Staging Patterns in Large-Scale Empirical Film Studies",
+    "@id": "r:109",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/semantic-annotation-and-automated-analysis-audio-visual-patterns-large-scale-empirical-film-studies",
+    "v:author": "Henning Agt-Rickauer"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Annotation and Automated Extraction of Audio-Visual Staging Patterns in Large-Scale Empirical Film Studies",
+    "@id": "r:109",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/semantic-annotation-and-automated-analysis-audio-visual-patterns-large-scale-empirical-film-studies",
+    "v:author": "Christian Hentschel"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Improving simulations-based industrial optimization with Semantic Web technologies",
+    "@id": "r:113",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/improving-simulations-based-industrial-optimization-semantic-web-technologies",
+    "v:author": "Marta Sabou"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Improving simulations-based industrial optimization with Semantic Web technologies",
+    "@id": "r:113",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/improving-simulations-based-industrial-optimization-semantic-web-technologies",
+    "v:author": "Nikolaus Sindelar"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "European Patent Information and the CPC Taxonomy as Linked Open Data",
+    "@id": "r:96",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/european-patent-information-and-cpc-taxonomy-linked-open-data",
+    "v:author": "Martin Kracker"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Exploring GDPR Compliance Over Provenance Graphs Using SHACL",
+    "@id": "r:120",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/exploring-gdpr-compliance-over-provenance-graphs-using-shacl",
+    "v:author": "Dave Lewis"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Exploring GDPR Compliance Over Provenance Graphs Using SHACL",
+    "@id": "r:120",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/exploring-gdpr-compliance-over-provenance-graphs-using-shacl",
+    "v:author": "Harshvardhan Jitendra Pandit"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Exploring GDPR Compliance Over Provenance Graphs Using SHACL",
+    "@id": "r:120",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/exploring-gdpr-compliance-over-provenance-graphs-using-shacl",
+    "v:author": "Declan O’sullivan"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "“The Less Is More” for Text Classification",
+    "@id": "r:122",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/“-less-more”-text-classification",
+    "v:author": "Maria Koutraki"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Assessing the Quality of Geospatial Linked Data – Experiences from Ordnance Survey Ireland (OSi)",
+    "@id": "r:94",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/assessing-quality-geospatial-linked-data-–-experiences-ordnance-survey-ireland-osi",
+    "v:author": "Eamon Clinton"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Assessing the Quality of Geospatial Linked Data – Experiences from Ordnance Survey Ireland (OSi)",
+    "@id": "r:94",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/assessing-quality-geospatial-linked-data-–-experiences-ordnance-survey-ireland-osi",
+    "v:author": "Rob Brennan"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "UNiCS: The open data platform for Research and Innovation",
+    "@id": "r:104",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/unics-open-data-platform-research-and-innovation",
+    "v:author": "Guillem Rull"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "UNiCS: The open data platform for Research and Innovation",
+    "@id": "r:104",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/unics-open-data-platform-research-and-innovation",
+    "v:author": "Alessandro Mosca"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "UNiCS: The open data platform for Research and Innovation",
+    "@id": "r:104",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/unics-open-data-platform-research-and-innovation",
+    "v:author": "Xavi Gimenez"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "UNiCS: The open data platform for Research and Innovation",
+    "@id": "r:104",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/unics-open-data-platform-research-and-innovation",
+    "v:author": "Bernardo Rondelli"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "UNiCS: The open data platform for Research and Innovation",
+    "@id": "r:104",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/unics-open-data-platform-research-and-innovation",
+    "v:author": "Fernando Roda"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontologies in Support of Data Mining",
+    "@id": "r:98",
+    "v:industryRelevant": "no",
+    "foaf:page": "missing",
+    "v:author": "Viktor Nekvapil"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Enabling Research of Cultural Heritage and Recent History using COURAGE Linked Data Registry",
+    "@id": "r:105",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/enabling-research-cultural-heritage-and-recent-history-using-courage-linked-data-registry",
+    "v:author": "Andras Micsik"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Enabling Research of Cultural Heritage and Recent History using COURAGE Linked Data Registry",
+    "@id": "r:105",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/enabling-research-cultural-heritage-and-recent-history-using-courage-linked-data-registry",
+    "v:author": "Tamás Felker"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Exploiting ontologies for deep learning: a case for sentiment mining",
+    "@id": "r:112",
+    "v:industryRelevant": "no",
+    "foaf:page": "missing",
+    "v:author": "Stephan Raaijmakers"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SCAIView – A Semantic Search Engine for Biomedical Research Utilizing a Microservice Architecture",
+    "@id": "r:99",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/scaiview-–-semantic-search-engine-biomedical-research-utilizing-microservice-architecture",
+    "v:author": "Jens Dörpinghaus"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SCAIView – A Semantic Search Engine for Biomedical Research Utilizing a Microservice Architecture",
+    "@id": "r:99",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/scaiview-–-semantic-search-engine-biomedical-research-utilizing-microservice-architecture",
+    "v:author": "Jürgen Klein"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SCAIView – A Semantic Search Engine for Biomedical Research Utilizing a Microservice Architecture",
+    "@id": "r:99",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/scaiview-–-semantic-search-engine-biomedical-research-utilizing-microservice-architecture",
+    "v:author": "Johannes Darms"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SCAIView – A Semantic Search Engine for Biomedical Research Utilizing a Microservice Architecture",
+    "@id": "r:99",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/scaiview-–-semantic-search-engine-biomedical-research-utilizing-microservice-architecture",
+    "v:author": "Sumit Madan"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "SCAIView – A Semantic Search Engine for Biomedical Research Utilizing a Microservice Architecture",
+    "@id": "r:99",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/scaiview-–-semantic-search-engine-biomedical-research-utilizing-microservice-architecture",
+    "v:author": "Marc Jacobs"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Profiting from Kitties on Ethereum: Leveraging Blockchain RDF with SANSA",
+    "@id": "r:124",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/profiting-kitties-ethereum-leveraging-blockchain-rdf-sansa",
+    "v:author": "Damien Graux"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Profiting from Kitties on Ethereum: Leveraging Blockchain RDF with SANSA",
+    "@id": "r:124",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/profiting-kitties-ethereum-leveraging-blockchain-rdf-sansa",
+    "v:author": "Dominik Muhs"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Profiting from Kitties on Ethereum: Leveraging Blockchain RDF with SANSA",
+    "@id": "r:124",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/profiting-kitties-ethereum-leveraging-blockchain-rdf-sansa",
+    "v:author": "Johannes Pfeffer"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Profiting from Kitties on Ethereum: Leveraging Blockchain RDF with SANSA",
+    "@id": "r:124",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/profiting-kitties-ethereum-leveraging-blockchain-rdf-sansa",
+    "v:author": "Danning Sui"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "ContractVis HighLighter: the Visual Assistant for the Fine Print",
+    "@id": "r:93",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/contractvis-highlighter-visual-assistant-fine-print",
+    "v:author": "Alexander Rind"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "ContractVis HighLighter: the Visual Assistant for the Fine Print",
+    "@id": "r:93",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/contractvis-highlighter-visual-assistant-fine-print",
+    "v:author": "Florian Grassinger"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "ContractVis HighLighter: the Visual Assistant for the Fine Print",
+    "@id": "r:93",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/contractvis-highlighter-visual-assistant-fine-print",
+    "v:author": "Armin Kirchknopf"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "ContractVis HighLighter: the Visual Assistant for the Fine Print",
+    "@id": "r:93",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/contractvis-highlighter-visual-assistant-fine-print",
+    "v:author": "Christina Stoiber"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "ContractVis HighLighter: the Visual Assistant for the Fine Print",
+    "@id": "r:93",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/contractvis-highlighter-visual-assistant-fine-print",
+    "v:author": "Aslihan Özüyilmaz"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Web: Ontological Search Approach",
+    "@id": "r:101",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-web-ontological-search-approach",
+    "v:author": "Marco Franke"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Web: Ontological Search Approach",
+    "@id": "r:101",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-web-ontological-search-approach",
+    "v:author": "Shantanoo Desai"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Web: Ontological Search Approach",
+    "@id": "r:101",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-web-ontological-search-approach",
+    "v:author": "Quan Deng"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Web: Ontological Search Approach",
+    "@id": "r:101",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-web-ontological-search-approach",
+    "v:author": "Stefan Wellsandt"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Web: Ontological Search Approach",
+    "@id": "r:101",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-web-ontological-search-approach",
+    "v:author": "Karl A. Hribernik"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontological Development of a Medical Decision Making System (MDMS)",
+    "@id": "r:100",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/ontological-development-medical-decision-making-system-mdms",
+    "v:author": "Vaios Papaioannou"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "FarsBase: a Cross-Domain Farsi knowledge Graph",
+    "@id": "r:115",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/farsbase-cross-domain-farsi-knowledge-graph-0",
+    "v:author": "Ali Hadian"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "FarsBase: a Cross-Domain Farsi knowledge Graph",
+    "@id": "r:115",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/farsbase-cross-domain-farsi-knowledge-graph-0",
+    "v:author": "Mohamad Bagher Sajadi"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "FarsBase: a Cross-Domain Farsi knowledge Graph",
+    "@id": "r:115",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/farsbase-cross-domain-farsi-knowledge-graph-0",
+    "v:author": "Behrouz Minaei"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Towards a Multi-Stage Approach to Detect Privacy Breaches in Physician Reviews",
+    "@id": "r:97",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/towards-multi-stage-approach-detect-privacy-breaches-physician-reviews",
+    "v:author": "Frederik Simon Bäumer"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Towards a Multi-Stage Approach to Detect Privacy Breaches in Physician Reviews",
+    "@id": "r:97",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/towards-multi-stage-approach-detect-privacy-breaches-physician-reviews",
+    "v:author": "Joschka Kersting"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Towards a Multi-Stage Approach to Detect Privacy Breaches in Physician Reviews",
+    "@id": "r:97",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/towards-multi-stage-approach-detect-privacy-breaches-physician-reviews",
+    "v:author": "Matthias Orlikowski"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Towards a Multi-Stage Approach to Detect Privacy Breaches in Physician Reviews",
+    "@id": "r:97",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/towards-multi-stage-approach-detect-privacy-breaches-physician-reviews",
+    "v:author": "Michaela Geierhos"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Semantic Web: Ontological Search Approach",
+    "@id": "r:101",
+    "v:industryRelevant": "yes",
+    "foaf:page": "https://2018.semantics.cc/semantic-web-ontological-search-approach",
+    "v:author": "Klaus-Dieter Thoben"
+  }, {
+    "@type": "v:Paper",
+    "v:title": "Ontological Development of a Medical Decision Making System (MDMS)",
+    "@id": "r:100",
+    "v:industryRelevant": "no",
+    "foaf:page": "https://2018.semantics.cc/ontological-development-medical-decision-making-system-mdms",
+    "v:author": "George-Peter Economou"
+  }]
+}
