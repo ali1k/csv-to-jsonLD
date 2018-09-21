@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "camelcase": "^5.0.0",
-    "csv-streamify": "^4.0.0",
+    "fast-csv": "^2.4.1",
     "valid-url": "^1.0.9"
   }
 }

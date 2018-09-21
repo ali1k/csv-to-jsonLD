@@ -1,5 +1,11 @@
 //specify the path to your input CSV
 let csvPath = 'csv/example.csv';
+//let csvPath = 'csv/example.csv';
+const csv = require('fast-csv')
+const fs = require('fs')
+const camelCase = require('camelcase');
+var validUrl = require('valid-url');
+var prefixes = require('./data/prefixes');
 //---------configurations--------
 let contextObj = {
     "r": "http://rdf.ld-r.org/res/",
@@ -15,12 +21,6 @@ let contextOptions ={
   }
 }
 //-----------------------------
-const csv = require('csv-streamify')
-const fs = require('fs')
-const camelCase = require('camelcase');
-var validUrl = require('valid-url');
-var prefixes = require('./data/prefixes');
-
 //automatically add other prefixes from the list
 if(contextOptions.customMappings){
   for(let item in contextOptions.customMappings){
@@ -32,67 +32,68 @@ if(contextOptions.customMappings){
 }
 
 let graphArr = [];
+let stream = fs.createReadStream(csvPath).setEncoding('utf-8');
+let options = {
+    delimiter: ',',
+    headers: true,
+    objectMode: true,
+    quote: '"',
+    escape: '"',
+    ignoreEmpty: true
+};
+let csvStream = csv(options)
+    .on("data", function(data){
+         counter++;
+         //to limi the number of rows returned
+         if(counter === 1){
+           for(let prop in data){
+             if (validUrl.isUri(data[prop]) && contextOptions['skippedColumns'].indexOf(prop) == -1){
+               if(contextOptions['customMappings'] && contextOptions['customMappings'][prop]){
+                 contextObj[contextOptions['customMappings'][prop]] = {
+                   "@type": "@id"
+                 };
+               }else{
+                 contextObj['v:'+camelCase(prop)] = {
+                   "@type": "@id"
+                 };
+               }
 
+             }
+           }
+         }
+         let tmpObj = {};
+     tmpObj['@type'] = 'v:'+contextOptions['entityType'];
+     for(let prop in data){
+       //console.log(line[prop]);
+       if(prop == contextOptions['idColumn']){
+         tmpObj['@id'] = 'r:'+camelCase(data[prop]);
+       }else{
+         if(contextOptions['skippedColumns'].indexOf(prop) == -1){
+           if(contextOptions['customMappings'] && contextOptions['customMappings'][prop]){
+             tmpObj[contextOptions['customMappings'][prop]] = isNaN(data[prop]) ? data[prop] : Number(data[prop]) ;
+           }else{
+             tmpObj['v:'+camelCase(prop)] = isNaN(data[prop]) ? data[prop] : Number(data[prop]) ;
+           }
+         }
+       }
+     }
+     graphArr.push(tmpObj);
+         console.log(data);
+    })
+    .on('data-invalid', function(data){
+          //do something with invalid row
 
-const options = {
-  delimiter: ',', // comma, semicolon, whatever
-  newline: '\n', // newline character (use \r\n for CRLF files)
-  quote: '"', // what's considered a quote
-  empty: 'NA', // empty fields are replaced by this,
+      })
+      .on('error', function(data){
+          //do something with invalid row
 
-  // if true, emit arrays instead of stringified arrays or buffers
-  objectMode: false,
-
-  // if set to true, uses first row as keys -> [ { column1: value1, column2: value2 }, ...]
-  columns: true
-}
-const parser = csv(options, function (err, result) {
-  if (err) throw err
-  // our csv has been parsed succesfully
-  //check the first result for context
-  if(result.length){
-    for(let prop in result[0]){
-      if (validUrl.isUri(result[0][prop]) && contextOptions['skippedColumns'].indexOf(prop) == -1){
-        if(contextOptions['customMappings'] && contextOptions['customMappings'][prop]){
-          contextObj[contextOptions['customMappings'][prop]] = {
-            "@type": "@id"
-          };
-        }else{
-          contextObj['v:'+camelCase(prop)] = {
-            "@type": "@id"
-          };
-        }
-
-      }
-    }
-  }
-  result.forEach(function (line) {
-    //console.log(line);
-    let tmpObj = {};
-    tmpObj['@type'] = 'v:'+contextOptions['entityType'];
-    for(let prop in line){
-      //console.log(line[prop]);
-      if(prop == contextOptions['idColumn']){
-        tmpObj['@id'] = 'r:'+camelCase(line[prop]);
-      }else{
-        if(contextOptions['skippedColumns'].indexOf(prop) == -1){
-          if(contextOptions['customMappings'] && contextOptions['customMappings'][prop]){
-            tmpObj[contextOptions['customMappings'][prop]] = isNaN(line[prop]) ? line[prop] : Number(line[prop]) ;
-          }else{
-            tmpObj['v:'+camelCase(prop)] = isNaN(line[prop]) ? line[prop] : Number(line[prop]) ;
-          }
-        }
-      }
-    }
-    graphArr.push(tmpObj);
-  });
-  let jsonLD = {
-     "@context": contextObj,
-     "@graph": graphArr
-  };
-  console.log(JSON.stringify(jsonLD));
-
-})
-
-// now pipe some data into it
-fs.createReadStream(csvPath).pipe(parser)
+      })
+    .on("end", function(){
+        let jsonLD = {
+           "@context": contextObj,
+           "@graph": graphArr
+        };
+        console.log(JSON.stringify(jsonLD));
+    });
+let counter = 0;
+stream.pipe(csvStream);
