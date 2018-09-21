@@ -78,7 +78,7 @@ let csvStream = csv(options)
        }
      }
      graphArr.push(tmpObj);
-         console.log(data);
+
     })
     .on('data-invalid', function(data){
           //do something with invalid row
